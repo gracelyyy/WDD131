@@ -1,1 +1,16 @@
+@media (min-width: 768px) {
 
+#menu {
+display: none;
+}
+
+.navigation {
+display: flex;
+justify-content: space-around;
+}
+
+.container {
+grid-template-columns: repeat(3, 1fr);
+}
+
+}
