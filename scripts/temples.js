@@ -1,16 +1,11 @@
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+// Dynamic year and last modified
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('last-modified').textContent = document.lastModified;
 
-menuButton.addEventListener("click", () => {
-navigation.classList.toggle("open");
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-if(menuButton.textContent === "☰"){
-menuButton.textContent = "X";
-}else{
-menuButton.textContent = "☰";
-}
+hamburger.addEventListener('click', () => {
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-
-document.querySelector("#lastModified").textContent = document.lastModified;
