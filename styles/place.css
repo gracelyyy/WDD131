@@ -1,0 +1,46 @@
+:root {
+    --primary: #0047ab;
+    --secondary: #ffffff;
+    --accent: #008000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--secondary);
+    color: #333;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.weather-heading::after {
+    content: " ⛅";
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
