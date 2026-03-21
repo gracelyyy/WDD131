@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Lesotho</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Lesotho</h1>
+</header>
+
+<section class="hero">
+    <picture>
+        <source srcset="images/lesotho-large.webp" media="(min-width: 768px)">
+        <img src="images/lesotho-small.webp" alt="Lesotho landscape">
+    </picture>
+</section>
+
+<main>
+
+    <section class="card">
+        <h2>About</h2>
+        <p>Lesotho is a mountainous country completely surrounded by South Africa. Known as the "Kingdom in the Sky", it offers breathtaking landscapes, rich culture, and unique traditions.</p>
+    </section>
+
+    <section class="card">
+        <h2 class="weather-heading">Weather</h2>
+        <p>Temperature: <span id="temp">8</span>°C</p>
+        <p>Wind Speed: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> 🌍 Mosa Molapo</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
