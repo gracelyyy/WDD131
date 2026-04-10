@@ -1,17 +1,22 @@
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  background: #fff0f5;
-  color: #000;
+  background-color: #fff0f5;
+  color: #000000;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 .container {
   max-width: 600px;
-  margin: 40px auto;
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
 }
 
 .center {
@@ -19,25 +24,11 @@ body {
 }
 
 h1 {
-  text-align: center;
-  color: #d63384;
+  color: #ff69b4;
 }
 
 h2 {
-  text-align: center;
-  color: gray;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  .container {
-    margin: 10px;
-    padding: 15px;
-  }
+  color: #555555;
 }
 
 form {
@@ -52,9 +43,8 @@ label {
 
 input, select, textarea {
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
 }
 
 textarea {
@@ -62,39 +52,35 @@ textarea {
 }
 
 fieldset {
-  border: 1px solid #f8c8dc;
-  border-radius: 10px;
+  border: 1px solid #ffb6c1;
   padding: 10px;
 }
 
 legend {
-  color: #d63384;
+  color: #ff69b4;
   font-weight: bold;
 }
 
 .btn {
-  background: #ffb6c1;
+  background-color: #ffb6c1;
   border: none;
   padding: 12px;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #ff69b4;
-  color: white;
+  background-color: #ff69b4;
+  color: #ffffff;
 }
 
 footer {
   text-align: center;
   padding: 15px;
-  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
   .container {
-    margin: 20px;
+    margin: 10px;
     padding: 15px;
   }
 }
