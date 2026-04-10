@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laid With Grace | Product Review</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Laid With Grace</h1>
+    <h2>Product Review</h2>
+
+    <form method="get" action="review.html">
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="date">Date of Installation</label>
+      <input type="date" id="date" name="date" required>
+
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" name="features" value="durable"> Durable</label>
+        <label><input type="checkbox" name="features" value="easy"> Easy to Use</label>
+        <label><input type="checkbox" name="features" value="design"> Stylish Design</label>
+        <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
+      </fieldset>
+
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" placeholder="Write your review..."></textarea>
+
+      <label for="username">Your Name</label>
+      <input type="text" id="username" name="username" placeholder="Optional">
+
+      <input type="submit" value="Submit Review" class="btn">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 | Laid With Grace</p>
+  </footer>
+</body>
+</html>
