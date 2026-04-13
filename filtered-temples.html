@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Temples</title>
-    <link rel="stylesheet" href="filtered-temples.css">
-    <script src="filtered-temples.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temples</title>
+
+  <link rel="stylesheet" href="filtered-temples.css">
+  <script defer src="filtered-temples.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>Temple Album</h1>
-    <nav>
-        <button onclick="filterTemples('all')">Home</button>
-        <button onclick="filterTemples('old')">Old</button>
-        <button onclick="filterTemples('new')">New</button>
-        <button onclick="filterTemples('large')">Large</button>
-        <button onclick="filterTemples('small')">Small</button>
-    </nav>
+  <h1>Temple Album</h1>
+
+  <nav>
+    <button id="home">Home</button>
+    <button id="old">Old</button>
+    <button id="new">New</button>
+    <button id="large">Large</button>
+    <button id="small">Small</button>
+  </nav>
 </header>
 
 <main id="temple-container"></main>
 
 <footer>
-    <p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+  <p id="copyright"></p>
+  <p id="lastModified"></p>
 </footer>
 
 </body>
