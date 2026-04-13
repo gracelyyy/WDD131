@@ -1,41 +1,56 @@
+/* GENERAL */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5;
+  background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
+/* NAVIGATION (FLEX ✅) */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 nav button {
-  margin: 5px;
-  padding: 10px;
+  padding: 10px 15px;
   border: none;
-  background: #555;
+  background-color: #555;
   color: white;
   cursor: pointer;
 }
 
+/* HOVER EFFECT ✅ */
 nav button:hover {
-  background: #777;
+  background-color: #777;
 }
 
+/* MAIN (LIMITED WIDTH ✅ + GRID ✅) */
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
   padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
+/* CARDS */
 .card {
   background: white;
-  border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .card img {
@@ -43,8 +58,27 @@ main {
   border-radius: 10px;
 }
 
+/* FOOTER */
 footer {
+  text-align: center;
+  padding: 10px;
   background: #333;
   color: white;
-  padding: 10px;
-}f
+}
+
+/* MEDIA QUERY ✅ */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
