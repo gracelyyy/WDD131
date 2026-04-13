@@ -13,7 +13,7 @@ header {
   text-align: center;
 }
 
-/* NAVIGATION (FLEX ✅) */
+/* NAV (FLEX ✅) */
 nav {
   display: flex;
   justify-content: center;
@@ -22,19 +22,19 @@ nav {
 }
 
 nav button {
-  padding: 10px 15px;
+  padding: 10px;
   border: none;
-  background-color: #555;
+  background: #555;
   color: white;
   cursor: pointer;
 }
 
-/* HOVER EFFECT ✅ */
+/* HOVER ✅ */
 nav button:hover {
-  background-color: #777;
+  background: #777;
 }
 
-/* MAIN (LIMITED WIDTH ✅ + GRID ✅) */
+/* MAIN (GRID + WIDTH ✅) */
 main {
   max-width: 1000px;
   margin: auto;
@@ -45,7 +45,7 @@ main {
   gap: 20px;
 }
 
-/* CARDS */
+/* CARD */
 .card {
   background: white;
   padding: 10px;
@@ -60,13 +60,13 @@ main {
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 10px;
   background: #333;
   color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-/* MEDIA QUERY ✅ */
+/* MEDIA QUERIES ✅ */
 @media (max-width: 768px) {
   main {
     grid-template-columns: repeat(2, 1fr);
