@@ -66,6 +66,7 @@ const temples = [
 
 const container = document.getElementById("temple-container");
 
+// DISPLAY FUNCTION
 function displayTemples(templesList) {
   container.innerHTML = "";
 
@@ -109,7 +110,14 @@ function filterTemples(type) {
   displayTemples(filtered);
 }
 
-// LOAD ALL ON START
+// EVENT LISTENERS (NO onclick in HTML)
+document.getElementById("home").addEventListener("click", () => filterTemples("home"));
+document.getElementById("old").addEventListener("click", () => filterTemples("old"));
+document.getElementById("new").addEventListener("click", () => filterTemples("new"));
+document.getElementById("large").addEventListener("click", () => filterTemples("large"));
+document.getElementById("small").addEventListener("click", () => filterTemples("small"));
+
+// INITIAL LOAD
 displayTemples(temples);
 
 // FOOTER
