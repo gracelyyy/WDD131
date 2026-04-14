@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore Lesotho, the Kingdom in the Sky, known for its mountains, culture, and scenic beauty.">
+    <meta name="author" content="Mosa Molapo">
+
     <title>Explore Lesotho</title>
 
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
 
 <header>
@@ -16,7 +21,8 @@
 
 <section class="hero">
     <picture>
-        <source srcset="images/lesotho-large.webp" media="(min-width: 768px)">
+        <source srcset="images/lesotho-large.webp" media="(min-width: 900px)">
+        <source srcset="images/lesotho-medium.webp" media="(min-width: 500px)">
         <img src="images/lesotho-small.webp" alt="Lesotho landscape">
     </picture>
 </section>
@@ -25,14 +31,21 @@
 
     <section class="card">
         <h2>About</h2>
-        <p>Lesotho is a mountainous country completely surrounded by South Africa. Known as the "Kingdom in the Sky", it offers breathtaking landscapes, rich culture, and unique traditions.</p>
+        <p>
+            Lesotho is a mountainous country completely surrounded by South Africa.
+            Known as the "Kingdom in the Sky", it offers breathtaking landscapes,
+            rich culture, and unique traditions.
+        </p>
     </section>
 
-    <section class="card">
-        <h2 class="weather-heading">Weather</h2>
-        <p>Temperature: <span id="temp">8</span>°C</p>
+    <section class="card weather">
+        <h2>Weather</h2>
+
+        <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+
+        <p>Temperature: <span id="temp">8</span> °C</p>
         <p>Wind Speed: <span id="wind">10</span> km/h</p>
-        <p>Wind Chill: <span id="windchill"></span></p>
+        <p>Wind Chill: <span id="windChill"></span></p>
     </section>
 
 </main>
