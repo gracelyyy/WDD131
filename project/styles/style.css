@@ -5,104 +5,86 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff0f5;
     color: #333;
 }
 
 header {
-    background: #111;
+    background: #ff69b4;
     color: white;
     padding: 1rem;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
+    margin: 0 10px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 .hero {
     text-align: center;
-    padding: 3rem 1rem;
-    background: white;
+    padding: 2rem;
+    background: #ffe4ec;
+    margin: 1rem;
+    border-radius: 10px;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    margin-bottom: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    background: #333;
+.btn, button {
+    background: #ff69b4;
     color: white;
-    padding: 0.7rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background: #555;
-}
-
-/* FEATURES */
 .features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .card {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255,105,180,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+form {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #111;
+    background: #ff69b4;
     color: white;
     margin-top: 2rem;
-}
-
-footer a {
-    color: #ddd;
-    display: block;
-    margin-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
 }
